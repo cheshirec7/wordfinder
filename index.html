@@ -49,7 +49,7 @@
             <button class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon" id="hdrbtn">
                 <i class="material-icons">more_vert</i>
             </button>
-            <ul class="mdl-menu mdl-js-menu mdl-js-ripple-effect mdl-menu--bottom-right">
+            <ul class="mdl-menu mdl-js-menu mdl-js-ripple-effect mdl-menu--bottom-right" for="hdrbtn">
                 <li class="mdl-menu__item">About</li>
                 <li class="mdl-menu__item">Contact</li>
             </ul>
@@ -96,6 +96,7 @@
     </div>
 
     <main class="mdl-layout__content">
+        <div id="searchSpinner" class="mdl-spinner mdl-js-spinner"></div>
         <div id="searchArea" class="mdl-color--grey-100">
             <form id="formSearch">
                 <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
@@ -106,20 +107,16 @@
                     </label>
                 </div>
                 <button id="btnSubmit" type="submit"
-                        class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent">Find
-                    Words
-                </button>
+                        class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent">Find Words</button>
             </form>
         </div>
-
-        <div id="searchSpinner" class="mdl-spinner mdl-js-spinner"></div>
         <div id="resultsArea">
         </div>
     </main>
 </div>
 
 <script src="https://code.getmdl.io/1.2.1/material.js"></script>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 <script src="js/modal.min.js"></script>
 <script src="js/scripts.js"></script>
 </body>

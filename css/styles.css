@@ -19,8 +19,11 @@ body * {
 }
 
 .mdl-spinner {
-    margin: 20px auto;
-    display: block;
+    position: absolute;
+    top: 30%;
+    left: calc(50% - 56px);
+    width:128px;
+    height:128px;
 }
 
 .mdl-snackbar {
@@ -245,6 +248,14 @@ body * {
     }
 }
 
+@media screen and (min-width: 1025px) {
+    #btnSubmit {
+        display: none;
+    }
+    #searchArea {
+        padding: 10px 0;
+    }
+}
 /*********** modal **********/
 .modal-open {
     overflow: hidden;
