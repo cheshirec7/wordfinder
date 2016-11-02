@@ -248,14 +248,6 @@ body * {
     }
 }
 
-@media screen and (min-width: 1025px) {
-    #btnSubmit {
-        display: none;
-    }
-    #searchArea {
-        padding: 10px 0;
-    }
-}
 /*********** modal **********/
 .modal-open {
     overflow: hidden;
