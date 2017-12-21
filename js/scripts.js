@@ -89,7 +89,7 @@ $(document).ready(function () {
         showSpinner = false;
         $.ajax({
             type: 'GET',
-            url: 'http://phpwordfinder.erictotten.info/define/' + word,
+            url: 'https://phpwordfinder.erictotten.net/define/' + word,
             dataType: 'html'
         }).done(function (data, textStatus, jqXHR) {
             $defModalBody.html(data);
@@ -146,7 +146,7 @@ $(document).ready(function () {
         var startTime = new Date(),
             oInput = {},
             return_type = 'html',
-            findurl = 'http://wordfinder.erictotten.info/find',
+            findurl = 'http://wordfinder.erictotten.net/find',
             $traytext = $tray.val().trim().toLowerCase();
 
         if (!findButtonClicked && $traytext.length < 2)
@@ -183,7 +183,7 @@ $(document).ready(function () {
                 findurl = 'http://nodewordfinder.herokuapp.com/find';
                 break;
             case 2:
-                findurl = 'http://phpwordfinder.erictotten.info/find';
+                findurl = 'https://phpwordfinder.erictotten.net/find';
                 break;
             case 3:
                 findurl = 'http://pywordfinder.appspot.com/search';
